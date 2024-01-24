@@ -10,16 +10,19 @@ In the project directory, you can run:
 
 Install the packages required for this app (flask + pytest).
 
-### `flask --app app run --debug`
+### `poetry run -- flask --app app run --debug`
 
 Runs the app in the development mode.\
 Open [http://localhost:5000](http://localhost:5000) to view it in your browser.
 
-Check out [http://localhost:5000/transactions/0x539C92186f7C6CC4CbF443F26eF84C595baBBcA1][http://localhost:500/transactions/0x539C92186f7C6CC4CbF443F26eF84C595baBBcA1] to see an example of the transactions endpoint.
+Check out [http://localhost:5000/transactions/0x539C92186f7C6CC4CbF443F26eF84C595baBBcA1](http://localhost:5000/transactions/0x539C92186f7C6CC4CbF443F26eF84C595baBBcA1) to see an example of the transactions endpoint.
 
 ## Implementation
 
 For the next few items focus on functionality first.
+
+### Rate Limiting
+Add rate limiting so we don't hit an error from etherscan.
 
 ### Existing Bug
 There's currently a bug when querying transactions that doesn't have to do with typing. Let's fix this first.

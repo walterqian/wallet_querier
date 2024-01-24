@@ -10,6 +10,7 @@ packages = [{include = "wallet_querier"}]
 python = "^3.8"
 flask = "^3.0.1"
 pytest = "^7.4.4"
+requests = "^2.31.0"
 
 
 [build-system]
