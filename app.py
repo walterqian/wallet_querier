@@ -17,7 +17,7 @@ def get_transactions(address):
 
     res = []
     for transaction in transactions:
-        volume = int(transaction["value"]) / (10**15)
+        volume = int(transaction["value"]) / (10**18)
         res.append(
             Transaction(
                 volume=volume,
